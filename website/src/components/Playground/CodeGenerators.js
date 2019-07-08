@@ -17,6 +17,7 @@ import styles from 'react-syntax-highlighter/styles/prism/prism';
 import CodeJavaScript from './CodeJavaScript';
 import CodeLitho from './CodeLitho';
 import CodeReactNative from './CodeReactNative';
+import CodeCooksTamplater from './CodeCooksTemplater';
 import CodeComponentKit from './CodeComponentKit';
 import jsx from 'react-syntax-highlighter/languages/prism/jsx';
 //import javascript from 'react-syntax-highlighter/languages/prism/javascript';
@@ -55,6 +56,11 @@ const LANGUAGES = {
   reactNative: {
     title: 'React Native',
     generator: CodeReactNative,
+    syntax: 'jsx',
+  },
+  cooksTemplater: {
+    title: 'Fabian Cook\'s Templater',
+    generator: CodeCooksTamplater,
     syntax: 'jsx',
   },
 };
